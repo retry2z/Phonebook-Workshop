@@ -1,0 +1,43 @@
+{{>header}}
+<!-- Create -->
+<header class="site-header text-center text-dark">
+    <h1>Create new contact</h1>
+    <h4 class="text-secondary">All contacts in one place</h4>
+</header>
+
+<section class="card-body container" style="max-width: 600px;">
+    <form class="form-horizontal" action="#/product/create" method="POST">
+        <div class="form-group input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+            </div>
+            <input name="firstName" class="form-control" placeholder="First name" type="text">
+        </div>
+
+        <div class="form-group input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+            </div>
+            <input name="lastName" class="form-control" placeholder="Last name (Optional)" type="text">
+        </div>
+
+
+        <div class="form-group input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text"> <i class="fa fa-phone"></i> </span>
+            </div>
+            <select name="prefix" class="custom-select" style="max-width: 120px;">
+                <option value="bg" selected>+359</option>
+                <option value="en">+44</option>
+                <option value="es">+34</option>
+            </select>
+            <input name="phone" class="form-control" placeholder="Phone number" type="text">
+        </div>
+
+        <div class="form-group text-center py-4">
+            <button type="submit" class="btn btn-info px-5">Save</button>
+        </div>
+    </form>
+</section>
+<!-- ./Create -->
+{{> footer}}

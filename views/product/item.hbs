@@ -1,0 +1,34 @@
+<table class="table table-striped table-light">
+    <thead class="thead-light">
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Phone</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each products}}
+        <tr>
+            <td>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <a class="btn" href="#/product/details/{{this.id}}">
+                            <i class="fas fa-user-circle fa-lg white-text mx-2 fa-3x"></i>
+                        </a>
+                    </div>
+                    <a class="btn" href="#/product/details/{{this.id}}">{{this.firstName}}</a>
+                    <a class="btn d-none d-xl-block py-2" href="#/product/details/{{this.id}}">{{this.lastName}}</a>
+                </div>
+            </td>
+
+            <td>
+                <a class="btn d-none d-xl-block" href="tel:{{this.prefix}}{{this.phone}}">
+                    {{this.prefix}} / {{this.phone}}
+                </a>
+                <a class="btn d-xl-none" href="tel:{{this.prefix}}{{this.phone}}">
+                    <i class="fa fa-phone fa-sm white-text mx-2 fa-2x"></i>
+                </a>
+            </td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>

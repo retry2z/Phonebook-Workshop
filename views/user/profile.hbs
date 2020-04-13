@@ -1,0 +1,75 @@
+{{> header}}
+<!-- Profile -->
+<header class="site-header text-center text-dark">
+    <h1>Profile</h1>
+    <h4 class="text-secondary">Personal info</h4>
+</header>
+
+
+{{#if user.emailVerified}}
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="text-center">
+                {{#if user.photoUrl}}
+                <img src="{{user.photoUrl}}" class="avatar img-circle" alt="avatar">
+                {{else}}
+                <img src="//placehold.it/100" class="avatar img-circle" alt="avatar">
+                {{/if}}
+            </div>
+        </div>
+
+
+        <div class="col-md-9 personal-info">
+            <form class="form-horizontal" method="POST" action="#/user/update">
+
+                <div class="form-group">
+                    <label class="col-lg-3 control-label">Email:</label>
+                    <div class="col-lg-8">
+                        <input class="form-control" type="text" value="{{user.email}}" disabled>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-lg-3 control-label"> Avatar URL:</label>
+                    <div class="col-lg-8">
+                        <input name="photoURL" class="form-control" type="text">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-lg-3 control-label">Name:</label>
+                    <div class="col-lg-8">
+                        <input name="displayName" class="form-control" type="text" value="{{user.name}}">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-3 control-label">New Password:</label>
+                    <div class="col-md-8">
+                        <input name="password" class="form-control" type="password">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-3 control-label">Repeat password:</label>
+                    <div class="col-md-8">
+                        <input name="rePassword" class="form-control" type="password">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-3 control-label"></label>
+                    <div class="col-md-8">
+                        <input type="submit" class="btn btn-primary" value="Save Changes">
+                        <span></span>
+                        <input type="reset" class="btn btn-default" value="Cancel">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{{else}}
+<h3 class="text-danger text-center">Email address not verified</h3>
+{{/if}}
+<!-- Profile-->
+{{> footer}}

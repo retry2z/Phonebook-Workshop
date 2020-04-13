@@ -1,0 +1,24 @@
+{{> header}}
+<!-- Dashboard -->
+<header class="site-header text-center text-dark">
+    <h1>Contacts</h1>
+    <h4 class="text-secondary">All contacts in one place</h4>
+</header>
+<section class="container px-1 text-center">
+    {{#if products}}
+
+    {{> item}}
+
+    {{else}}
+    <h3>No Content yet!</h3>
+    {{/if}}
+
+</section>
+
+<section class="text-center">
+    <form class="form" action="#/product/create" method="GET">
+        <button type="submit" href="#/product/create" class="btn btn-info px-5 mb-5">Create new contact</button>
+    </form>
+</section>
+<!-- ./Dashboard -->
+{{> footer}}

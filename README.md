@@ -4,7 +4,7 @@
 ![GitHub stars](https://img.shields.io/github/stars/retry2z/Phonebook-SammyJS?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/retry2z/Phonebook-SammyJS?style=social)
 
-Simple workshop with SammyJS for SPA Web application with Firebase for back-end and authentication.
+Simple workshop with SammyJS front-end with responsive UI and Firebase for authentication.
 
 ## Prerequisites
 

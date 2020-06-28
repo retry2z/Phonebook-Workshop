@@ -1,10 +1,18 @@
-# Project name
+![GitHub repo size](https://img.shields.io/github/repo-size/retry2z/Phonebook-Workshop)
+![GitHub stars](https://img.shields.io/github/stars/retry2z/Phonebook-Workshop?style=social)
+![GitHub forks](https://img.shields.io/github/forks/retry2z/Phonebook-Workshop?style=social)
 
-![GitHub repo size](https://img.shields.io/github/repo-size/retry2z/Phonebook-SammyJS)
-![GitHub stars](https://img.shields.io/github/stars/retry2z/Phonebook-SammyJS?style=social)
-![GitHub forks](https://img.shields.io/github/forks/retry2z/Phonebook-SammyJS?style=social)
+## Description
 
-Simple workshop with SammyJS front-end with responsive UI and Firebase for authentication.
+Phone Book is a CRUD application which allows authenticated users to add new contacts to the catalog.
+The project is built for educational purposes and in particular – practicing JavaScript.
+
+## Technoligies
+
+- SammyJS - router to handle rerendering views.
+- Firestore and Firebase for DB and Authentication service.
+- Input date validation.
+
 
 ## Prerequisites
 
@@ -13,47 +21,31 @@ Before you begin, ensure you have met the following requirements:
 * You have a Windows, Linux or Mac machine. State which OS is supported/which is not.
 * You have read https://docs.npmjs.com/.
 
-## Installing Phonebook-SammyJS
+## Installing and configuration before running
 
-To install Phonebook-SammyJS, follow these steps:
+To install follow these steps:
 
 Windows, Linux and macOS:
-
 ```
 npm install
-
 ```
 
-## Using Phonebook-SammyJS
+Open index.html with liveserver
 
-To use Phonebook-SammyJS, follow these steps:
 
-```
-Open index.html with live-server
+## Contributing
 
-```
-
-## Contributing to Phonebook-SammyJS
-To contribute to Phonebook-SammyJS, follow these steps:
+To contribute to follow these steps:
 
 1. Fork this repository.
 2. Create a branch: `git checkout -b <branch_name>`.
 3. Make your changes and commit them: `git commit -m '<commit_message>'`
-4. Push to the original branch: `git push origin Phonebook-SammyJS/<location>`
+4. Push to the original branch: `git push`
 5. Create the pull request.
 
 Alternatively see the GitHub documentation on [creating a pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
-
-## Contributors
-
-Thanks to the following people who have contributed to this project:
-
-//
 
 ## Contact
 
 If you want to contact me you can reach me at h.hristow.88@gmail.com
 
-## License
-
-This project uses the following license: MIT (https://opensource.org/licenses/MIT).

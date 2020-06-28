@@ -4,7 +4,7 @@
 
 ## Description
 
-Phone Book is a CRUD application which allows authenticated users to add new contacts to the catalog.
+Phone Book is a SPA Web application which allows authenticated users to add new contacts to the catalog.
 The project is built for educational purposes and in particular – practicing JavaScript.
 
 ## Technoligies

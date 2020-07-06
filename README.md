@@ -4,15 +4,14 @@
 
 ## Description
 
-Phone Book is a SPA Web application which allows authenticated users to add new contacts to the catalog.
+Phone Book is a SPA Web application which allows authenticated users to add, edit, delete contacts to their contact list.
 The project is built for educational purposes and in particular – practicing JavaScript.
 
 ## Technoligies
 
-- SammyJS - router to handle rerendering views.
+- Bootstrap responsive and great UI/UX.
+- Client-side html rendering and routing with SammyJS.
 - Firestore and Firebase for DB and Authentication service.
-- Input date validation.
-
 
 ## Prerequisites
 
